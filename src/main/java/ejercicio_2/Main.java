@@ -7,13 +7,13 @@ public class Main {
 	public static void main(String[] args) {
 		
 		// Creo una lista de objetos voladores, en este caso extienden de la clase padre Volador
-		// aunque podrian no hacerlo si implementaran la interfaz
+		// pero Avion implementa la interfaz Aterrizaje y UFO no
 		
-        ArrayList<IAterrizaje> objetosVoladores = new ArrayList<>();
+        ArrayList<Volador> objetosVoladores = new ArrayList<>();
         
         //Creo tres instancias de clases con herencia de Volador
-        objetosVoladores.add(new Avion());
-        objetosVoladores.add(new Avion());
+        objetosVoladores.add(new Avion(2222));
+        objetosVoladores.add(new Avion(5555));
         objetosVoladores.add(new UFO());
         objetosVoladores.add(new UFO());
         
